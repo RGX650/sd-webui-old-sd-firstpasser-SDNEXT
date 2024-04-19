@@ -78,7 +78,7 @@ def makeUI(script):
             elem_id="firstpass_upscaler",
         )
     with gr.Row():
-        sd_1_checkpoint = create_ui.create_setting_component('sd_model_checkpoint')
+        sd_1_checkpoint = create_setting_component('sd_model_checkpoint')
         sd_1_checkpoint.label = "Checkpoint for SD 1.x pass"
 
     def get_infotext_field(d, field):
