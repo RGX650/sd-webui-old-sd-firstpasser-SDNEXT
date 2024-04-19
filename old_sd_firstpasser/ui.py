@@ -1,6 +1,7 @@
 import json
 import gradio as gr
-from modules import ui, shared
+from modules import shared
+from modules.ui import create_setting_component
 from old_sd_firstpasser.tools import quote_swap, NAME
 
 
@@ -26,7 +27,7 @@ def makeUI(script):
             elem_id="firstpass_upscaler",
         )
     with gr.Row():
-        sd_1_checkpoint = ui.create_setting_component('sd_model_checkpoint')
+        sd_1_checkpoint = create_setting_component('sd_model_checkpoint')
         sd_1_checkpoint.label = "Checkpoint for SD 1.x pass"
 
     def get_infotext_field(d, field):
