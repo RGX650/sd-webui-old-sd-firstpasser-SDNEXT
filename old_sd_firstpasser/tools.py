@@ -108,5 +108,5 @@ NAME = "Old SD firstpasser"
 
 def get_model_short_title(model_aliases):
     if model := sd_models.get_closet_checkpoint_match(model_aliases):
-        return model.short_title
+        return model.title
     return model_aliases
