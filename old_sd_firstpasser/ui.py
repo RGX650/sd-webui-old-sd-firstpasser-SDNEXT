@@ -1,7 +1,7 @@
 import json
 import gradio as gr
 from modules import shared
-from modules.ui import create_setting_component
+from modules.ui import create_ui
 from old_sd_firstpasser.tools import quote_swap, NAME
 
 
