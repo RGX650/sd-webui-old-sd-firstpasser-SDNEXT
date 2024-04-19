@@ -1,6 +1,6 @@
 import json
 import gradio as gr
-from modules import ui, shared
+from modules import ui, shared, ui_common
 from modules.shared import opts
 from modules.ui import create_ui
 from old_sd_firstpasser.tools import quote_swap, NAME
